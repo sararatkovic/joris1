@@ -2,32 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>   
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <form>
+        <form>
+        <div class="left">
         <label>Ocena: </label>
-        <input type="number" min="5" max="10">
-        <label>Datum izlaska na ispit: </label>
-        <input type="date">
+        <input type="number" id="ocena">
+        <div class="error" id="errorOcena"></div>
         <br>
         <label>Broj indeksa: </label>
-        <input type="number">
-        <label>Rok: </label>
-        <input type="radio" name="" value="Januar">
-        <label>Januar</label>
-        <input type="radio">
-        <label>April</label>
-        <input type="radio">
-        <label>Jun</label>
+        <input type="text" id="brIndeksa">
+        <div class="error" id="errorIndeks"></div>
         <br>
         <label>Redni broj izlaska na ispit: </label>
-        <input type="number">
-        <input type="checkbox">
-        <label>Polozio-la</label>
+        <input type="number" id="brIzlaska" min="0">
+        <div class="error" id="errorRB"></div>
         <br>
-        <input type="button" value="Posalji">
+        </div>
+        <div class="right">
+        <label>Datum izlaska na ispit: </label>
+        <input type="date" id="datum">
+        <div class="error" id="errorDatum"></div>
+        <br>           
+        <label>Rok: </label>
+        <input type="radio" id="Januar" name="Rok" value="Januar">
+        <label>Januar</label>
+        <input type="radio" id="April" name="Rok" value="April">
+        <label>April</label>
+        <input type="radio" id="Jun" name="Rok" value="Jun">
+        <label>Jun</label>
+        <div class="error" id="errorRok"></div>
+        <br>
+        <input type="checkbox" id="polozen">
+        <label>Polozio-la</label>
+        <div class="error" id="errorPolozen"></div>
+        <br>
+        <button type="submit" id="posalji">posalji</button>
+        </div>
     </form>
+    <label>Podaci forme</label>
+    <textarea id="Podaci"></textarea>
+    <script src="index.js"></script>
 </body>
 </html>

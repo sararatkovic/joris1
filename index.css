@@ -1,0 +1,16 @@
+form{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 60%;
+    
+}
+.left{
+    width: 50%;
+}
+.right{
+    width: 50%;
+}
+.error{
+    color: red;
+}
