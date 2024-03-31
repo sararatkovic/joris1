@@ -40,7 +40,7 @@ function podaciForme(){
         let JSONdata = {
             "ocena": ocena,
             "Indeks": indeks,
-            "Broj izlaska": brojIzlaska,
+            "BrojIzlaska": brojIzlaska,
             "Datum": datumIzlaska,
             "Rok": rok? rok.value:null,
             "Polozen": polozen
